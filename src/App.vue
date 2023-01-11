@@ -145,11 +145,11 @@ export default {
       jsPDFInvoiceTemplate(this.invoiceDatas);
     },
     printInv() {
-      
+      console.log(this.$refs.invoiceDiv.innerHTML)
       let mywindow = window.open(
         "",
         "PRINT",
-        "height=650,width=900,top=100,left=150"
+        "height=842,width=595,top=100,left=150"
       );
       mywindow.document.write("</head><body >");
       mywindow.document.write(this.$refs.invoiceDiv.innerHTML);
